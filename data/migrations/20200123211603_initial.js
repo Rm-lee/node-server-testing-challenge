@@ -4,7 +4,7 @@ exports.up = async function(knex) {
       table.increments()
       table.string("make").notNullable()
       .unique()
-      .table.string("models").notNullable()
+      table.string("models").notNullable()
   })
 };
 
